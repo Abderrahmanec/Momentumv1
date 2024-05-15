@@ -1,0 +1,7 @@
+
+ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ì•”8À¨¶Ù÷1J$dfbd0364-b4a7-4d21-bb5c-787ee1c2cbf6
+˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿©Ôôüÿÿÿÿ8À¨¶Ù÷1J$b0a5966d-ed98-452c-af6b-fdf321efa724
+b
+java:S6905*"Don't use the query "SELECT *".(¨Ã¼8«ùôÚ÷1J$c72917a2-b544-4df2-8e7a-4473ee161fd5
+b
+java:S6905*"Don't use the query "SELECT *".(¨Ã¼8¬ùôÚ÷1J$ff0976a2-821e-4e11-a46b-f62ab4946f66

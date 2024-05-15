@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="stackPaneBackgroundColor" styleClass="background-white" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.momentumv1.LoginController">
+    <Pane fx:id="paneBackgroundColor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="410.0" minWidth="612.0" prefHeight="596.0" prefWidth="786.0" styleClass=".background-white">
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+
+
+        <TextField id="username" fx:id="usernameField" layoutX="85.0" layoutY="222.0" prefHeight="27.0" prefWidth="185.0" stylesheets="@style.css" />
+        <Label fx:id="pass" layoutX="84.0" layoutY="257.0" prefHeight="32.0" prefWidth="108.0" text="Password:">
+            <font>
+                <Font name="Bodoni MT" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="name" layoutX="88.0" layoutY="190.0" prefHeight="32.0" prefWidth="100.0" text="Username:">
+            <font>
+                <Font name="Bodoni MT" size="15.0" />
+            </font>
+        </Label>
+        <Label id="welcome" fx:id="welcome" layoutX="173.0" layoutY="15.0" prefHeight="99.0" prefWidth="429.0" stylesheets="@style.css" text="Welcome to MomentumPro" textFill="#0b19d7">
+            <font>
+                <Font name="Britannic Bold" size="24.0" />
+            </font>
+         <padding>
+            <Insets top="2.0" />
+         </padding>
+        </Label>
+        <PasswordField id="password" fx:id="passwordField" layoutX="85.0" layoutY="289.0" prefHeight="27.0" prefWidth="185.0" />
+        <Button fx:id="log" layoutX="138.0" layoutY="371.0" mnemonicParsing="false" onAction="#login" prefHeight="31.0" prefWidth="89.0" text="LOGIN">
+            <padding>
+                <Insets bottom="6.0" right="5.0" top="4.0" />
+            </padding>
+            <font>
+                <Font name="Bauhaus 93" size="16.0" />
+            </font>
+        </Button>
+        <CheckBox fx:id="showPasswordCheckbox" layoutX="74.0" layoutY="343.0" mnemonicParsing="false" onAction="#showPassword" prefHeight="17.0" prefWidth="108.0" text="Show Password">
+         <font>
+            <Font name="Bell MT" size="12.0" />
+         </font></CheckBox>
+        <Label fx:id="showPassword" layoutX="202.0" layoutY="332.0" prefHeight="40.0" prefWidth="218.0" />
+        <Label layoutX="182.0" layoutY="446.0" prefHeight="40.0" prefWidth="177.0" text="Neues Onto interstellar">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+        <Label fx:id="logStatus" layoutX="270.0" layoutY="360.0" prefHeight="54.0" prefWidth="380.0" />
+        <Button layoutX="359.0" layoutY="453.0" mnemonicParsing="false" onAction="#registerFenster" onMousePressed="#toggleDarkMode" prefHeight="25.0" prefWidth="57.0" text="here" />
+        <ProgressBar fx:id="progressBar" layoutX="343.0" layoutY="139.0" />
+        <Label fx:id="css" layoutX="441.0" layoutY="418.0" prefHeight="17.0" prefWidth="108.0" />
+        <ToggleButton fx:id="togle" alignment="TOP_RIGHT" layoutX="670.0" layoutY="40.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#toggleDarkMode" selected="true" text="Dark Light" textFill="#4a1fad">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Bloom />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.6000000238418579" green="0.5266666412353516" blue="0.5266666412353516" />
+                     </color></Light.Distant>
+               </light>
+            </Lighting>
+         </effect></ToggleButton>
+        <Label id="cs" layoutX="22.0" layoutY="222.0" prefHeight="211.0" prefWidth="17.0" stylesheets="@style.css" text="Label" textFill="#e42d2d" />
+
+
+    </Pane>
+</StackPane>

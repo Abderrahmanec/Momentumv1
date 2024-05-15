@@ -1,0 +1,60 @@
+/* Light Mode */
+.background-white {
+    -fx-background-color: #ffffff; /* White background */
+}
+
+.label-white {
+    -fx-text-fill: black; /* Black text */
+}
+
+/* Dark Mode */
+.background-black {
+    -fx-background-color: #171a1e; /* Dark background */
+}
+
+.label-black {
+    -fx-text-fill: white; /* White text */
+}
+
+.background-gold {
+    -fx-background-color: gold; /* Gold background */
+}
+
+.background-blue {
+    -fx-background-color: rgb(69, 69, 196); /* Blue background */
+}
+
+#cs {
+    -fx-background-color: red; /* Gold background */
+    -fx-border-radius: 10px; /* Circular border */
+    -fx-border-width: 3px; /* Border width */
+    -fx-cursor: hand; /* Set cursor to pointer */
+    -fx-padding: 21 3 2 4 ;
+
+    /* Add any additional styles you want to apply */
+}
+
+
+#welcome {
+   -fx-padding: 12 24 32 12;
+      -fx-border-radius: 10px; /* Circular border */
+}
+
+
+#log:hover {
+-fx-border-radius: 10px; /* Circular border */
+     -fx-cursor:hand;
+}
+
+#showPasswordCheckbox:hover{
+  -fx-cursor:hand;
+}
+
+#togle:hover{
+  -fx-cursor:hand;
+}
+
+#username {
+ -fx-border-radius: 90deg;
+
+}

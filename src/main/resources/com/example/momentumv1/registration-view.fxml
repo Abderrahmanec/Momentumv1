@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="stackPaneBackgroundColor" prefHeight="538.0" prefWidth="721.0" styleClass="background-white" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.momentumv1.RegistrationController">
+   <Pane fx:id="paneBackgroudColor" styleClass="background-white">
+      <AnchorPane layoutY="7.0" prefHeight="514.0" prefWidth="654.0">
+         <Label layoutX="164.0" layoutY="26.0" prefHeight="26.0" prefWidth="266.0" text="New User ">
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+         <Button layoutX="74.0" layoutY="319.0" mnemonicParsing="false" onAction="#registerUser" text="Register" />
+         <TextField fx:id="usernameField" layoutX="164.0" layoutY="103.0" styleClass="label-white" />
+         <PasswordField fx:id="passwordField1" layoutX="164.0" layoutY="145.0" />
+         <Label fx:id="userNameLabel" layoutX="68.0" layoutY="107.0" prefHeight="26.0" prefWidth="71.0" text="Username" />
+         <Label fx:id="passwordLabel" layoutX="64.0" layoutY="158.0" prefHeight="18.0" prefWidth="79.0" text="Password" />
+         <Label fx:id="status" layoutX="226.0" layoutY="221.0" prefHeight="58.0" prefWidth="327.0" />
+         <PasswordField fx:id="passwordField2" layoutX="164.0" layoutY="187.0" />
+         <Label layoutX="62.0" layoutY="191.0" prefHeight="18.0" prefWidth="89.0" text="Password" />
+         <ToggleButton fx:id="mode" layoutX="472.0" layoutY="40.0" mnemonicParsing="false" onAction="#toggleDarkMode" text="Mode" />
+         <Label fx:id="showPassword1" layoutX="342.0" layoutY="144.0" prefHeight="26.0" prefWidth="224.0" />
+         <Label fx:id="showPassword2" layoutX="347.0" layoutY="187.0" prefHeight="26.0" prefWidth="214.0" />
+         <CheckBox fx:id="showPasswordCheckBox" layoutX="64.0" layoutY="248.0" mnemonicParsing="false" onAction="#showPassword" text="Show Password" />
+      </AnchorPane>
+   </Pane>
+</StackPane>
