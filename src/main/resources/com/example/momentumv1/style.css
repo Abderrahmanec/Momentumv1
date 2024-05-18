@@ -4,7 +4,7 @@
 }
 
 .label-white {
-    -fx-text-fill: black; /* Black text */
+    -fx-text-fill: #ffffff; /* Black text */
 }
 
 /* Dark Mode */
@@ -13,16 +13,9 @@
 }
 
 .label-black {
-    -fx-text-fill: white; /* White text */
+    -fx-text-fill: #171a1e; /* White text */
 }
 
-.background-gold {
-    -fx-background-color: gold; /* Gold background */
-}
-
-.background-blue {
-    -fx-background-color: rgb(69, 69, 196); /* Blue background */
-}
 
 #cs {
     -fx-background-color: red; /* Gold background */
@@ -57,4 +50,13 @@
 #username {
  -fx-border-radius: 90deg;
 
+}
+
+.gold {
+-fx-text-fill: black;
+}
+
+
+.red {
+-fx-text-fill: gold;
 }

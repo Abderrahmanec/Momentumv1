@@ -108,5 +108,14 @@
                 </executions>
             </plugin>
         </plugins>
-    </build>
+
+
+            <sourceDirectory>src/main/java</sourceDirectory>
+            <resources>
+                <resource>
+                    <directory>src/main/resources</directory>
+                </resource>
+            </resources>
+        </build>
+
 </project>

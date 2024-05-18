@@ -1,4 +1,4 @@
-module com.example.momentumv1 {
+module com.example.momentumv {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -12,6 +12,13 @@ module com.example.momentumv1 {
     requires org.apache.commons.codec;
 
     opens com.example.momentumv1 to javafx.fxml;
+    opens com.login to javafx.fxml;
     exports com.example.momentumv1;
+    exports  com.database;
+    exports com.config;
+    exports  com.login;
+    exports  com.registration;
+    exports  com.notifcationPackage;
+     opens com.registration to javafx.fxml;
    // opens com.example.momentum to javafx.fxml;
 }
