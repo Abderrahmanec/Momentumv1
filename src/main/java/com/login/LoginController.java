@@ -2,9 +2,9 @@ package com.login;
 
 import com.UIUtilities;
 import com.database.DatabaseManager;
-
 import com.notifcationPackage.NotificationHelper;
 import com.registration.RegistrationController;
+import com.personeControllers.UserController;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -14,6 +14,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 
+import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 
@@ -33,6 +34,8 @@ public class LoginController {
     @FXML private Label usernameLabel;
     @FXML private Label css;
 
+    private String loggedInUsername;
+
     // FXML-annotated private UI elements (injected by FXML)
     @FXML private Button log;
     @FXML private TextField usernameField;
@@ -42,21 +45,30 @@ public class LoginController {
     @FXML private Pane paneBackgroundColor;
     @FXML private StackPane stackPaneBackgroundColor;
     @FXML ToggleButton togle;
-
+    @FXML String username;
     @FXML
     public void login() {
-        String username = usernameField.getText();
+         username = usernameField.getText();
         String password = passwordField.getText();
         boolean isAuthenticated = DatabaseManager.authenticateUser(username, password);
         if (isAuthenticated) {
             //logStatus.setStyle("-fx-text-fill: green;");
             // logStatus.setText("Login Successful!");
-            NotificationHelper.showSuccessNotification("Login Successfully","Login Successful!");
+            loggedInUsername = username;
+
+            try {
+                UserController u=new UserController();
+                user();
+              NotificationHelper.showSuccessNotification("Login Successfully",loggedInUsername);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
             hidden();
 
         } else {
             //  displayNotification();
-            NotificationHelper.showFailedNotification("Login Failed","Incorrect username or password.");
+          NotificationHelper n=new NotificationHelper();
+      NotificationHelper.showFailedNotification("Login Failed","Incorrect username or password.");
             // logStatus.setStyle("-fx-text-fill: red;");
             //logStatus.setText("Login Failed: Incorrect username or password.");
         }
@@ -107,6 +119,7 @@ public class LoginController {
         Stage stage = (Stage) welcome.getScene().getWindow();
         stage.close();
     }
+
 
     @FXML
     public void animation() {
@@ -190,7 +203,16 @@ public class LoginController {
         alert.showAndWait();
     }
 
-
+    @FXML public void user()throws IOException {
+        // Launch a new stage for the new window
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/momentumv1/user-view.fxml"));
+        Scene scene = new Scene(loader.load());
+        Stage newWindow = new Stage(); // Instantiate Stage object
+        newWindow.getIcons().add(new Image("file:///C:/Users/Public/Studium/S2/Programmieren%202/Documentation/Logo/momentumpro-favicon-color.png"));
+        newWindow.setScene(scene);
+        newWindow.setTitle("Dashboard");
+        newWindow.show();
+    }
 
 
 }

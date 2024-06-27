@@ -2,6 +2,7 @@ package com.registration;
 
 import com.UIUtilities;
 import com.config.Appconfig;
+import com.notifcationPackage.NotificationHelper;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -9,6 +10,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.*;
+import javafx.application.Application;
 
 import javafx.stage.Stage;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -23,7 +25,7 @@ import java.security.SecureRandom;
 import java.util.Base64;
 import java.util.Properties;
 
-public class RegistrationController {
+public class RegistrationController extends Application{
 
     @FXML private Label welcomeUser;
     @FXML private Label userNameLabel;
@@ -61,8 +63,9 @@ public class RegistrationController {
         String password2 = passwordField2.getText();
         if (username.isEmpty() || password1.isEmpty() || password2.isEmpty() || !password1.equals(password2))
         {
-            status.setStyle("-fx-text-fill: red;");
-            status.setText("Please fill in all fields and ensure passwords match.");
+            //status.setStyle("-fx-text-fill: red;");
+            //status.setText("Please fill in all fields and ensure passwords match.");
+            NotificationHelper.showFailedNotification("Fehler","Bitte prüfen Sie Ihre Eingabe");
             return;
         }
 
@@ -99,8 +102,9 @@ public class RegistrationController {
                 // Execute the SQL statement
                 preparedStatement.executeUpdate();
                 hidden();
-                status.setStyle("-fx-text-fill: green;");
-                status.setText("User registered successfully!");
+               // status.setStyle("-fx-text-fill: green;");
+               // status.setText("User registered successfully!");
+                NotificationHelper.showSuccessNotification("Erfolg","Sie haben ein neues Konto erstellt!");
             }
         } catch (SQLException e) {
             System.err.println("Error registering user: " + e.getMessage());
@@ -183,4 +187,8 @@ public class RegistrationController {
         passwordField2.setVisible(false);
     }
 
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+
+    }
 }

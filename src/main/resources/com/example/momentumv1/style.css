@@ -10,6 +10,7 @@
 /* Dark Mode */
 .background-black {
     -fx-background-color: #171a1e; /* Dark background */
+
 }
 
 .label-black {
@@ -59,4 +60,55 @@
 
 .red {
 -fx-text-fill: gold;
+}
+
+.title{
+    -fx-background-color: red;
+}
+
+
+/* Style for GridPane */
+.grid-pane {
+    -fx-background-color: #f0f0f0; /* Set background color */
+}
+
+/* Style for text fields */
+.text-field {
+    -fx-background-radius: 8px; /* Set border radius */
+    -fx-border-radius: 8px;
+    -fx-alignment: center; /* Center text */
+}
+
+/* Style for buttons */
+.button {
+    -fx-background-color: #4c60af; /* Green background */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 8px 16px; /* Padding */
+    -fx-background-radius: 8px; /* Set border radius */
+    -fx-border-radius: 8px;
+
+}
+/* Style for hovered buttons */
+.button:hover {
+    -fx-cursor: hand;
+    -fx-transition: 0.5s;
+    -fx-text-fill: #f1efef;
+    -fx-font-family: "Times New Roman";
+    -fx-background-color: black;
+}
+
+
+
+/* Style for ListView */
+.list-view {
+    -fx-background-color: #f0f0f0; /* Set background color */
+}
+
+/* Style for TableView */
+.table-view {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 8px; /* Set border radius */
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="275.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.personeControllers.UserController">
+   <TextField fx:id="pid" layoutX="33.0" layoutY="43.0" />
+   <TextField fx:id="betragTextField" layoutX="33.0" layoutY="104.0" />
+   <Label layoutX="32.0" layoutY="14.0" prefHeight="26.0" prefWidth="158.0" text="Projekt Id:" />
+   <Label layoutX="33.0" layoutY="76.0" prefHeight="26.0" prefWidth="166.0" text="Amount:" />
+   <Label layoutX="260.0" layoutY="30.0" prefHeight="26.0" prefWidth="158.0" text="USER ID:" />
+   <TextField fx:id="uid" layoutX="264.0" layoutY="63.0" />
+   <Button layoutX="23.0" layoutY="138.0" mnemonicParsing="false" onAction="#makePayment" text="bezahlen" />
+</AnchorPane>

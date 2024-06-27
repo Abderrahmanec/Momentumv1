@@ -1,0 +1,111 @@
+/* Style for GridPane */
+.grid-pane {
+    -fx-padding: 10;
+}
+
+/* Style for VBox */
+.main-vbox {
+    -fx-alignment: center;
+}
+
+/* Style for text fields */
+.text-field {
+    -fx-background-radius: 8px; /* Set border radius */
+    -fx-border-radius: 8px;
+    -fx-alignment: center; /* Center text */
+}
+
+/* Style for buttons */
+.button {
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+/* Style for ListView */
+.list-view {
+    -fx-background-color: #f0f0f0; /* Set background color */
+}
+
+/* Style for TableView */
+.table-view {
+    -fx-background-color: #eff0f1; /* White background */
+    -fx-border-color: #5d5757; /* Border color */
+    -fx-border-width: 3px; /* Border width */
+    -fx-border-radius: 8px; /* Set border radius */
+}
+
+/* Style for odd rows */
+.table-row-cell:odd {
+    -fx-background-color: #e1e0e0; /* Light grey background */
+}
+
+/* Style for even rows */
+.table-row-cell:even {
+    -fx-background-color: #b7b6b6; /* White background */
+}
+
+/* Style for buttons on hover */
+.button:hover {
+    -fx-background-color: #45a049; /* Darker green */
+    -fx-cursor: hand;
+}
+
+/* Custom style for buttons */
+.custom-button {
+    -fx-background-color: #ffcc00; /* Yellow background */
+    -fx-text-fill: red; /* White text */
+    -fx-cursor: hand;
+}
+
+/* Style for delete button */
+.deleteButton {
+    -fx-background-color: red; /* Red background */
+    -fx-cursor: hand;
+}
+
+/* Style for delete button on hover */
+.deleteButton:hover {
+    -fx-background-color: darkred; /* Darker red background */
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-font-size: 14px; /* Adjusted font size */
+}
+
+/* Style for selected table row */
+.table-row-cell:selected {
+    -fx-background-color: #4a90e2; /* Soft blue background for selected row */
+    -fx-text-fill: white !important; /* White text for good contrast */
+    -fx-font-size: 14px;
+    -fx-transition: all 0.8s ease-in-out, color 0.7s ease-in-out; /* Smooth transitions */
+    -fx-cursor: progress;
+    -fx-border-radius: 12px;
+    -fx-padding: 6px; /* Add padding for better spacing */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 0); /* Subtle shadow */
+}
+
+/* Style for text in selected table row */
+.table-row-cell:selected .text {
+    -fx-fill: #f1efef !important; /* Ensure text color is white */
+}
+
+/* Style for table row on hover */
+.table-row-cell:hover {
+    -fx-background-color: #295088; /* Light steel blue for hover */
+    -fx-text-fill: white !important;
+    -fx-transition: all 0.9s ease-in-out, color 0.3s ease-in-out;
+    -fx-cursor: hand;
+    -fx-border-radius: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+
+/* Style for Anchor Pane Project Information */
+#projekInformationAnchorPane {
+    -fx-background-color: #86b2f1;
+    -fx-border-radius: 8px;
+}

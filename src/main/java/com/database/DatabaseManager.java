@@ -34,7 +34,7 @@ public class DatabaseManager {
 
     }
 
-    private static Connection getConnection() throws SQLException {
+    public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
     }
 
@@ -116,4 +116,19 @@ public class DatabaseManager {
             return false;
         }
     }
+
+    public static Connection getConnection(String databaseName) throws SQLException {
+        String url = String.format("jdbc:mysql://localhost:3306/project_management");
+        return DriverManager.getConnection(url, "root", "");
+    }
+
+
+    public static Connection getConnectToanyDb(String databaseName, String name, String password) throws SQLException {
+        String url = String.format("jdbc:mysql://localhost:3306/"+databaseName);
+        return DriverManager.getConnection(url, name, password);
+    }
+
+
+
+
 }

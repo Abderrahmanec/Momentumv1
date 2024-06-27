@@ -25,7 +25,7 @@
                 <Font name="Bodoni MT" size="15.0" />
             </font>
         </Label>
-        <Label id="welcome" fx:id="welcome" layoutX="173.0" layoutY="15.0" prefHeight="99.0" prefWidth="429.0" styleClass=".label-white" stylesheets="@style.css" text="Welcome to MomentumPro" textFill="#0b19d7">
+        <Label id="welcome" fx:id="welcome" layoutX="145.0" layoutY="30.0" prefHeight="99.0" prefWidth="429.0" styleClass=".label-white" stylesheets="@style.css" text="Guten Tag ," textFill="#0b19d7">
             <font>
                 <Font name="Britannic Bold" size="24.0" />
             </font>
@@ -47,7 +47,7 @@
             <Font name="Bell MT" size="12.0" />
          </font></CheckBox>
         <Label fx:id="showPassword" layoutX="281.0" layoutY="289.0" prefHeight="25.0" prefWidth="220.0" />
-        <Label layoutX="182.0" layoutY="446.0"  prefHeight="40.0" prefWidth="177.0" text="Neues Onto interstellar">
+        <Label layoutX="182.0" layoutY="446.0" prefHeight="40.0" prefWidth="177.0" text="Neues Konto erstellen">
          <font>
             <Font size="16.0" />
          </font></Label>
@@ -72,6 +72,7 @@
             </Lighting>
          </effect></ToggleButton>
         <Label id="cs" layoutX="22.0" layoutY="222.0" prefHeight="211.0" prefWidth="17.0" stylesheets="@style.css" text="Label" textFill="#e42d2d" />
+      <Label layoutX="75.0" layoutY="121.0" prefHeight="55.0" styleClass=".label-white" stylesheets="@style.css" textFill="#0b19d7" textAlignment="CENTER" prefWidth="263.0" text="Bitte Melden Sie Sich" />
 
 
     </Pane>

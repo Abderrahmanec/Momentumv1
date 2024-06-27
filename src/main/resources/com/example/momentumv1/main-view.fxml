@@ -3,10 +3,26 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.momentumv1.MainController">
-   <children>
-      <Label layoutX="188.0" layoutY="191.0" prefHeight="18.0" prefWidth="309.0" text="Hello " />
-      <Button layoutX="81.0" layoutY="245.0" mnemonicParsing="false" onAction="#openNewWindow" text="login" />
-      <Button layoutX="176.0" layoutY="245.0" mnemonicParsing="false" onAction="#openNewWindowRe" text="registration" />
-   </children>
+<AnchorPane prefHeight="468.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.momentumv1.MainController">
+   <Label layoutX="251.0" layoutY="282.0" prefHeight="18.0" prefWidth="309.0" text="Hello " />
+   <Button layoutX="86.0" layoutY="364.0" mnemonicParsing="false" onAction="#openNewWindow" text="login" />
+   <Button layoutX="174.0" layoutY="364.0" mnemonicParsing="false" onAction="#openNewWindowRe" text="registration" />
+   <Button layoutX="657.0" layoutY="126.0" mnemonicParsing="false" onAction="#task" text="task" />
+   <Button layoutX="318.0" layoutY="364.0" mnemonicParsing="false" onAction="#projekt" text="projekt" />
+   <Button layoutX="486.0" layoutY="55.0" mnemonicParsing="false" onAction="#admin" text="Dashboard" />
+   <BorderPane fx:id="borderPane" layoutX="8.0" layoutY="14.0" prefHeight="223.0" prefWidth="200.0">
+      <top>
+          <MenuBar BorderPane.alignment="CENTER">
+              <Menu fx:id="File" mnemonicParsing="false" text="File">
+                  <MenuItem fx:id="Close" mnemonicParsing="false" text="Close" />
+              </Menu>
+              <Menu fx:id="Help" mnemonicParsing="false" text="Edit">
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+              </Menu>
+              <Menu mnemonicParsing="false" text="Help">
+                  <MenuItem mnemonicParsing="false" text="About" />
+              </Menu>
+          </MenuBar>
+      </top></BorderPane>
+   <Button layoutX="469.0" layoutY="364.0" mnemonicParsing="false" onAction="#user" prefHeight="26.0" prefWidth="67.0" text="user" />
 </AnchorPane>
